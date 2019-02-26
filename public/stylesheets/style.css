@@ -26,13 +26,25 @@ a:after {
   margin: auto;
 }
 
+.grid {
+  display: grid;
+  margin-top: 2em;
+  grid-gap: 1em;
+  grid-template-columns: 1fr 1fr;
+}
+
 .post {
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 15px;
-  margin: 2em auto;
   padding: 2em;
 }
 
 .cta {
   margin-top: 2em;
+}
+
+@media screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }

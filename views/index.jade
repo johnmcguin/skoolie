@@ -4,10 +4,11 @@ block content
   .container
     h1= title
     p A simple tool for trying to find the best deal on a bus to live in down by the river, pulling data from craigslist.
-    each skoolie in skoolies
-      div.post
-        p!= skoolie.title
-        p!= skoolie.content
-        p= skoolie.date
-        .cta
-          p #[a(target="_blank", href=skoolie.link) View Bus]
+    div.grid
+      each skoolie in skoolies
+        div.post
+          p!= skoolie.title
+          p!= skoolie.content
+          p= skoolie.date
+          .cta
+            p #[a(target="_blank", href=skoolie.link) View Bus]
