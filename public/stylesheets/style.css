@@ -1,14 +1,38 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: dimgray;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 }
 
 a {
   color: #00B7FF;
+  text-decoration: none;
+  border: 1px solid #00B7FF;
+  padding: .5em;
+}
+
+p {
+  line-height: 1.25;
+  letter-spacing: .5px;
+}
+
+a:after {
+  content: '→';
+  margin-left: .5em;
+}
+
+.container {
+  max-width: 940px;
+  margin: auto;
 }
 
 .post {
-  border: 1px solid dimgray;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 15px;
   margin: 2em auto;
   padding: 2em;
+}
+
+.cta {
+  margin-top: 2em;
 }
