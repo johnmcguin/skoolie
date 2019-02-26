@@ -2,8 +2,10 @@ extends layout
 
 block content
   h1= title
-  p Welcome to the #{title}
-  ul
+  p Welcome to the #{title}. This is a simple tool for trying to find the best deals for school busses, pulling data from craigslist. Thanks, craigslist
   each skoolie in skoolies
-    li
-      p= skoolie.title
+    div.post
+      p!= skoolie.title
+      p!= skoolie.content
+      p= skoolie.date
+      p #[a(target="_blank", href=skoolie.link) View Bus]
